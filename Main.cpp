@@ -19,11 +19,22 @@ int main()
 		glfwTerminate();
 		return -1;
 	}
-	glfwMakeContextCurrent(window);
+
+	glfwMakeContextCurrent(window); //Created the window and Show.
+
+	gladLoadGL();
+
+	glViewport(0, 0, 800, 800);
+
+	glClearColor(0.07f, 0.13f, 0.17f, 1.0f);//Coloring the window with the nice navi blue
+
+	glClear(GL_COLOR_BUFFER_BIT);// Clearing the window.
+
+	glfwSwapBuffers(window); // Now swaps the buffers. 
 
 	while (!glfwWindowShouldClose(window)) { // Loop to make the window still open and don't close imedially. 
 
-		glfwPollEvents();//TO be able to interact with the window.
+		glfwPollEvents();//TO be able to interact with the window and close.
 	}
 
 	glfwDestroyWindow(window); // Terminate the window.

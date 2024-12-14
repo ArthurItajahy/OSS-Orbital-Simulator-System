@@ -11,7 +11,7 @@ class VAO {
 		
 		void LinkVBO(VBO VBO, GLuint layout);
 		void Bind();
-		void Unvind();
+		void Unbind();
 		void Delete();
 };
 

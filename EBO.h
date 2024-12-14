@@ -7,7 +7,7 @@ class EBO
 {
 public:
 	GLuint ID;
-	EBO(GLfloat* vertices, GLsizeiptr size);
+	EBO(GLuint* indices, GLsizeiptr size);
 
 	void Bind();
 	void Unbind();

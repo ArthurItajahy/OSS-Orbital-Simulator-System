@@ -2,11 +2,17 @@
 #define INTERPRETER_H
 
 #include <vector>
-#include "lexer.h"
+#include <memory>
+#include "statement.h"
+#include "expression.h"
 
 class Interpreter {
 public:
-    void interpret(const std::vector<Token>& tokens);
+    explicit Interpreter(std::vector<std::shared_ptr<Statement>>& statements);
+    void interpret();
+
+private:
+    std::vector<std::shared_ptr<Statement>>& statements;
 };
 
 #endif

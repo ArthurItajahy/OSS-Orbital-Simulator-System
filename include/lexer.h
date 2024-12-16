@@ -5,7 +5,16 @@
 #include <vector>
 
 enum class TokenType {
-    VAR, IDENTIFIER, NUMBER, ASSIGN, SEMICOLON, END_OF_FILE, UNKNOWN
+    VAR,
+    IDENTIFIER,
+    NUMBER,
+    OPERATOR,
+    ASSIGN,
+    PRINT,
+    COMMENT,
+    SEMICOLON,
+    END_OF_FILE,
+    UNKNOWN
 };
 
 struct Token {
@@ -21,6 +30,10 @@ public:
 private:
     std::string input;
     size_t pos;
+
+    std::string readNumber();
+    std::string readIdentifier();
+    std::string readComment();
 };
 
 #endif

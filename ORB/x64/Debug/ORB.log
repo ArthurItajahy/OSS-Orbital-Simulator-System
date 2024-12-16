@@ -1,1 +1,119 @@
-﻿  ORB.vcxproj -> C:\Users\User\Desktop\StarOrbit\OSS\x64\Debug\ORB.exe
+﻿  main.cpp
+C:\Users\User\Desktop\StarOrbit\OSS\src\main.cpp(42,21): error C2512: 'Interpreter': no appropriate default constructor available
+      C:\Users\User\Desktop\StarOrbit\OSS\include\interpreter.h(9,7):
+      see declaration of 'Interpreter'
+  
+C:\Users\User\Desktop\StarOrbit\OSS\src\main.cpp(43,21): error C2660: 'Interpreter::interpret': function does not take 1 arguments
+      C:\Users\User\Desktop\StarOrbit\OSS\include\interpreter.h(12,10):
+      see declaration of 'Interpreter::interpret'
+      C:\Users\User\Desktop\StarOrbit\OSS\src\main.cpp(43,21):
+      while trying to match the argument list '(std::vector<std::shared_ptr<Statement>,std::allocator<std::shared_ptr<Statement>>>)'
+  
+  parser.cpp
+C:\Users\User\Desktop\StarOrbit\OSS\include\parser.h(13,33): error C2065: 'Token': undeclared identifier
+  (compiling source file 'src/parser.cpp')
+  
+C:\Users\User\Desktop\StarOrbit\OSS\include\parser.h(13,26): error C2923: 'std::vector': 'Token' is not a valid template type argument for parameter '_Ty'
+  (compiling source file 'src/parser.cpp')
+      C:\Users\User\Desktop\StarOrbit\OSS\include\parser.h(13,33):
+      see declaration of 'Token'
+  
+C:\Users\User\Desktop\StarOrbit\OSS\include\parser.h(13,26): error C2976: 'std::vector': too few template arguments
+  (compiling source file 'src/parser.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\vector(429,7):
+      see declaration of 'std::vector'
+  
+C:\Users\User\Desktop\StarOrbit\OSS\include\parser.h(17,17): error C2065: 'Token': undeclared identifier
+  (compiling source file 'src/parser.cpp')
+  
+C:\Users\User\Desktop\StarOrbit\OSS\include\parser.h(17,10): error C2923: 'std::vector': 'Token' is not a valid template type argument for parameter '_Ty'
+  (compiling source file 'src/parser.cpp')
+      C:\Users\User\Desktop\StarOrbit\OSS\include\parser.h(17,17):
+      see declaration of 'Token'
+  
+C:\Users\User\Desktop\StarOrbit\OSS\include\parser.h(17,10): error C2976: 'std::vector': too few template arguments
+  (compiling source file 'src/parser.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\vector(429,7):
+      see declaration of 'std::vector'
+  
+C:\Users\User\Desktop\StarOrbit\OSS\include\parser.h(21,11): error C3646: 'currentToken': unknown override specifier
+  (compiling source file 'src/parser.cpp')
+  
+C:\Users\User\Desktop\StarOrbit\OSS\include\parser.h(21,23): error C2059: syntax error: '('
+  (compiling source file 'src/parser.cpp')
+  
+C:\Users\User\Desktop\StarOrbit\OSS\include\parser.h(21,25): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'src/parser.cpp')
+  
+C:\Users\User\Desktop\StarOrbit\OSS\include\parser.h(22,11): error C3646: 'consume': unknown override specifier
+  (compiling source file 'src/parser.cpp')
+  
+C:\Users\User\Desktop\StarOrbit\OSS\include\parser.h(22,18): error C2059: syntax error: '('
+  (compiling source file 'src/parser.cpp')
+  
+C:\Users\User\Desktop\StarOrbit\OSS\include\parser.h(22,20): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'src/parser.cpp')
+  
+C:\Users\User\Desktop\StarOrbit\OSS\include\parser.h(23,16): error C2061: syntax error: identifier 'TokenType'
+  (compiling source file 'src/parser.cpp')
+  
+C:\Users\User\Desktop\StarOrbit\OSS\src\parser.cpp(8,9): error C2511: 'Parser::Parser(std::vector<Token,std::allocator<Token>> &)': overloaded member function not found in 'Parser'
+      C:\Users\User\Desktop\StarOrbit\OSS\include\parser.h(11,7):
+      see declaration of 'Parser'
+  
+C:\Users\User\Desktop\StarOrbit\OSS\src\parser.cpp(8,84): error C2550: 'Parser::{ctor}': constructor initializer lists are only allowed on constructor definitions
+C:\Users\User\Desktop\StarOrbit\OSS\src\parser.cpp(10,15): error C2039: 'currentToken': is not a member of 'Parser'
+      C:\Users\User\Desktop\StarOrbit\OSS\include\parser.h(11,7):
+      see declaration of 'Parser'
+  
+C:\Users\User\Desktop\StarOrbit\OSS\src\parser.cpp(11,12): error C2065: 'tokens': undeclared identifier
+C:\Users\User\Desktop\StarOrbit\OSS\src\parser.cpp(11,19): error C2065: 'pos': undeclared identifier
+C:\Users\User\Desktop\StarOrbit\OSS\src\parser.cpp(14,15): error C2039: 'consume': is not a member of 'Parser'
+      C:\Users\User\Desktop\StarOrbit\OSS\include\parser.h(11,7):
+      see declaration of 'Parser'
+  
+C:\Users\User\Desktop\StarOrbit\OSS\src\parser.cpp(15,12): error C2065: 'tokens': undeclared identifier
+C:\Users\User\Desktop\StarOrbit\OSS\src\parser.cpp(15,19): error C2065: 'pos': undeclared identifier
+C:\Users\User\Desktop\StarOrbit\OSS\src\parser.cpp(15,24): error C7732: expected an expression before ']'
+C:\Users\User\Desktop\StarOrbit\OSS\src\parser.cpp(18,14): error C2511: 'bool Parser::match(TokenType)': overloaded member function not found in 'Parser'
+      C:\Users\User\Desktop\StarOrbit\OSS\include\parser.h(11,7):
+      see declaration of 'Parser'
+  
+C:\Users\User\Desktop\StarOrbit\OSS\src\parser.cpp(37,9): error C2660: 'Parser::match': function does not take 1 arguments
+      C:\Users\User\Desktop\StarOrbit\OSS\include\parser.h(23,10):
+      see declaration of 'Parser::match'
+      C:\Users\User\Desktop\StarOrbit\OSS\src\parser.cpp(37,9):
+      while trying to match the argument list '(TokenType)'
+  
+C:\Users\User\Desktop\StarOrbit\OSS\src\parser.cpp(40,14): error C2660: 'Parser::match': function does not take 1 arguments
+      C:\Users\User\Desktop\StarOrbit\OSS\include\parser.h(23,10):
+      see declaration of 'Parser::match'
+      C:\Users\User\Desktop\StarOrbit\OSS\src\parser.cpp(40,14):
+      while trying to match the argument list '(TokenType)'
+  
+C:\Users\User\Desktop\StarOrbit\OSS\src\parser.cpp(54,5): error C2660: 'Parser::match': function does not take 1 arguments
+      C:\Users\User\Desktop\StarOrbit\OSS\include\parser.h(23,10):
+      see declaration of 'Parser::match'
+      C:\Users\User\Desktop\StarOrbit\OSS\src\parser.cpp(54,5):
+      while trying to match the argument list '(TokenType)'
+  
+C:\Users\User\Desktop\StarOrbit\OSS\src\parser.cpp(58,5): error C2660: 'Parser::match': function does not take 1 arguments
+      C:\Users\User\Desktop\StarOrbit\OSS\include\parser.h(23,10):
+      see declaration of 'Parser::match'
+      C:\Users\User\Desktop\StarOrbit\OSS\src\parser.cpp(58,5):
+      while trying to match the argument list '(TokenType)'
+  
+C:\Users\User\Desktop\StarOrbit\OSS\src\parser.cpp(66,5): error C2660: 'Parser::match': function does not take 1 arguments
+      C:\Users\User\Desktop\StarOrbit\OSS\include\parser.h(23,10):
+      see declaration of 'Parser::match'
+      C:\Users\User\Desktop\StarOrbit\OSS\src\parser.cpp(66,5):
+      while trying to match the argument list '(TokenType)'
+  
+C:\Users\User\Desktop\StarOrbit\OSS\src\parser.cpp(68,5): error C2660: 'Parser::match': function does not take 1 arguments
+      C:\Users\User\Desktop\StarOrbit\OSS\include\parser.h(23,10):
+      see declaration of 'Parser::match'
+      C:\Users\User\Desktop\StarOrbit\OSS\src\parser.cpp(68,5):
+      while trying to match the argument list '(TokenType)'
+  
+  statement.cpp
+  Generating Code...

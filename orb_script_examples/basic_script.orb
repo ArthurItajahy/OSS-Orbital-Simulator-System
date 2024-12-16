@@ -1,4 +1,0 @@
-// Define a variable
-var<int> x = 5;
-
-print(result);

@@ -1,6 +1,11 @@
 #include "../include/interpreter.h"
-#include <iostream>
 
-void Interpreter::interpret(const std::vector<Token>& tokens) {
-    std::cout << "Interpretation of tokens happens here." << std::endl;
+Interpreter::Interpreter(std::vector<std::shared_ptr<Statement>>& statements)
+    : statements(statements) {
+}
+
+void Interpreter::interpret() {
+    for (auto& statement : statements) {
+        statement->execute();
+    }
 }

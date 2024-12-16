@@ -133,20 +133,26 @@
     <ClCompile Include="src\lexer.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\parser.cpp" />
+    <ClCompile Include="src\statement.cpp" />
     <ClCompile Include="src\token.cpp" />
     <ClCompile Include="src\utilities.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="orb_script_examples\advanced_example.orb" />
-    <None Include="orb_script_examples\basic_script.orb" />
+    <None Include="orb_script_examples\script.orb" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\ast.h" />
+    <ClInclude Include="include\binary_expression.h" />
     <ClInclude Include="include\error.h" />
+    <ClInclude Include="include\expression.h" />
     <ClInclude Include="include\interpreter.h" />
     <ClInclude Include="include\lexer.h" />
+    <ClInclude Include="include\literal_expression.h" />
     <ClInclude Include="include\parser.h" />
+    <ClInclude Include="include\statement.h" />
     <ClInclude Include="include\token.h" />
+    <ClInclude Include="include\variable_expression.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

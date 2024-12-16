@@ -13,65 +13,67 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="orb_scripts_examples">
+      <UniqueIdentifier>{c800eb87-efbe-4919-a0d9-f847ad2b728d}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Source Files\src">
-      <UniqueIdentifier>{97d620ef-a5fb-4192-863e-9f181d04b0b1}</UniqueIdentifier>
+      <UniqueIdentifier>{d0a103e1-2081-4ae4-9972-1366c2c65656}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\include">
-      <UniqueIdentifier>{fef75c27-5715-4b4d-85e1-dc8f7a6a0851}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="tests">
-      <UniqueIdentifier>{aee8b602-9e45-413a-bff7-d87d59c272f3}</UniqueIdentifier>
+      <UniqueIdentifier>{c1aeb8c3-c355-4018-8238-e0015c07e097}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ORB.cpp">
+    <ClCompile Include="src\error.cpp">
       <Filter>Source Files\src</Filter>
     </ClCompile>
-    <ClCompile Include="parser.cpp">
+    <ClCompile Include="src\ast.cpp">
       <Filter>Source Files\src</Filter>
     </ClCompile>
-    <ClCompile Include="interpreter.cpp">
+    <ClCompile Include="src\interpreter.cpp">
       <Filter>Source Files\src</Filter>
     </ClCompile>
-    <ClCompile Include="ast.cpp">
+    <ClCompile Include="src\main.cpp">
       <Filter>Source Files\src</Filter>
     </ClCompile>
-    <ClCompile Include="token.cpp">
+    <ClCompile Include="src\parser.cpp">
       <Filter>Source Files\src</Filter>
     </ClCompile>
-    <ClCompile Include="error.cpp">
+    <ClCompile Include="src\token.cpp">
       <Filter>Source Files\src</Filter>
     </ClCompile>
-    <ClCompile Include="utilities.cpp">
+    <ClCompile Include="src\utilities.cpp">
       <Filter>Source Files\src</Filter>
     </ClCompile>
-    <ClCompile Include="lexer_tests.cpp">
-      <Filter>tests</Filter>
-    </ClCompile>
-    <ClCompile Include="parser_tests.cpp">
-      <Filter>tests</Filter>
-    </ClCompile>
-    <ClCompile Include="utilities_test.cpp">
-      <Filter>tests</Filter>
+    <ClCompile Include="src\lexer.cpp">
+      <Filter>Source Files\src</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="lexer.h">
+    <None Include="orb_script_examples\advanced_example.orb">
+      <Filter>orb_scripts_examples</Filter>
+    </None>
+    <None Include="orb_script_examples\basic_script.orb">
+      <Filter>orb_scripts_examples</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\ast.h">
       <Filter>Header Files\include</Filter>
     </ClInclude>
-    <ClInclude Include="parser.h">
+    <ClInclude Include="include\error.h">
       <Filter>Header Files\include</Filter>
     </ClInclude>
-    <ClInclude Include="interpreter.h">
+    <ClInclude Include="include\interpreter.h">
       <Filter>Header Files\include</Filter>
     </ClInclude>
-    <ClInclude Include="ast.h">
+    <ClInclude Include="include\lexer.h">
       <Filter>Header Files\include</Filter>
     </ClInclude>
-    <ClInclude Include="token.h">
+    <ClInclude Include="include\parser.h">
       <Filter>Header Files\include</Filter>
     </ClInclude>
-    <ClInclude Include="error.h">
+    <ClInclude Include="include\token.h">
       <Filter>Header Files\include</Filter>
     </ClInclude>
   </ItemGroup>

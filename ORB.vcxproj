@@ -127,24 +127,26 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ast.cpp" />
-    <ClCompile Include="error.cpp" />
-    <ClCompile Include="interpreter.cpp" />
-    <ClCompile Include="lexer_tests.cpp" />
-    <ClCompile Include="ORB.cpp" />
-    <ClCompile Include="parser.cpp" />
-    <ClCompile Include="parser_tests.cpp" />
-    <ClCompile Include="token.cpp" />
-    <ClCompile Include="utilities.cpp" />
-    <ClCompile Include="utilities_test.cpp" />
+    <ClCompile Include="src\ast.cpp" />
+    <ClCompile Include="src\error.cpp" />
+    <ClCompile Include="src\interpreter.cpp" />
+    <ClCompile Include="src\lexer.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\parser.cpp" />
+    <ClCompile Include="src\token.cpp" />
+    <ClCompile Include="src\utilities.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ast.h" />
-    <ClInclude Include="error.h" />
-    <ClInclude Include="interpreter.h" />
-    <ClInclude Include="lexer.h" />
-    <ClInclude Include="parser.h" />
-    <ClInclude Include="token.h" />
+    <None Include="orb_script_examples\advanced_example.orb" />
+    <None Include="orb_script_examples\basic_script.orb" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\ast.h" />
+    <ClInclude Include="include\error.h" />
+    <ClInclude Include="include\interpreter.h" />
+    <ClInclude Include="include\lexer.h" />
+    <ClInclude Include="include\parser.h" />
+    <ClInclude Include="include\token.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

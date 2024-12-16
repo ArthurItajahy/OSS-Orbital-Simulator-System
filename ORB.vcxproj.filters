@@ -59,6 +59,9 @@
     <None Include="orb_script_examples\script.orb">
       <Filter>Resource Files\orb_script_examples</Filter>
     </None>
+    <None Include="src\script.orb">
+      <Filter>Source Files\src</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\ast.h">

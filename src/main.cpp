@@ -3,6 +3,7 @@
 #include <string>
 #include <memory>
 #include <stdexcept>
+#include <fstream>
 
 // --- Enums for Token Types ---
 enum class TokenType {
@@ -170,7 +171,19 @@ private:
 // --- Main Function ---
 int main() {
     try {
-        std::string source = "print(\"Hello World\");";  // Simple input program
+        // Path to the script file
+        std::string filePath = "C:\\Users\\User\\Desktop\\StarOrbit\\OSS\\src\\script.orb";
+
+        // Open the file
+        std::ifstream inputFile(filePath);
+
+        // Check if the file was opened successfully
+        if (!inputFile.is_open()) {
+            throw std::runtime_error("Could not open the script file: " + filePath);
+        }
+
+        // Read the entire file into a string
+        std::string source((std::istreambuf_iterator<char>(inputFile)), std::istreambuf_iterator<char>());
 
         // Tokenize the input source
         Lexer lexer(source);
@@ -187,6 +200,10 @@ int main() {
         else {
             std::cerr << "Error: Invalid statement" << std::endl;
         }
+
+        // Close the file
+        inputFile.close();
+
     }
     catch (const std::exception& e) {
         std::cerr << "Error: " << e.what() << std::endl;

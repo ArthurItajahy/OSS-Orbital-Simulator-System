@@ -140,6 +140,7 @@
   <ItemGroup>
     <None Include="orb_script_examples\advanced_example.orb" />
     <None Include="orb_script_examples\script.orb" />
+    <None Include="src\script.orb" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\ast.h" />

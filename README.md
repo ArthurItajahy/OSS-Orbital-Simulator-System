@@ -1,9 +1,9 @@
-<p align="center"  >
+<p align="center" >
     <img width="350" height="200" src="assets/small-logo.gif" alt="Minha Figura"><img>
-    <img width="350" height="200" src="assets/logo-letters.gif" alt="Minha Figura"><img>
+
 </p>
 
-W° is a domain-specific language designed to handle the complexities of orbital mechanics and space computations. Whether you're working on interplanetary missions, orbital simulations, or just learning about space, W° offers a straightforward, intuitive syntax for space enthusiasts and professionals alike.
+#### W°(W-Grad) is a domain-specific language designed to handle the complexities of orbital mechanics and space computations. Whether you're working on interplanetary missions, orbital simulations, or just learning about space, W° offers a straightforward, intuitive syntax for space enthusiasts and professionals alike.
 
 ---
 

@@ -1,0 +1,3 @@
+C:/Users/User/Desktop/StarOrbit/W-Grad/bld/CMakeFiles/wgc.dir
+C:/Users/User/Desktop/StarOrbit/W-Grad/bld/CMakeFiles/edit_cache.dir
+C:/Users/User/Desktop/StarOrbit/W-Grad/bld/CMakeFiles/rebuild_cache.dir

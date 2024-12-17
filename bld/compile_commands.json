@@ -1,0 +1,8 @@
+[
+{
+  "directory": "C:/Users/User/Desktop/StarOrbit/W-Grad/bld",
+  "command": "C:\\MinGW\\bin\\gcc.exe -O3 -DNDEBUG -o CMakeFiles\\wgc.dir\\src\\main.c.obj -c C:\\Users\\User\\Desktop\\StarOrbit\\W-Grad\\src\\main.c",
+  "file": "C:\\Users\\User\\Desktop\\StarOrbit\\W-Grad\\src\\main.c",
+  "output": "CMakeFiles\\wgc.dir\\src\\main.c.obj"
+}
+]

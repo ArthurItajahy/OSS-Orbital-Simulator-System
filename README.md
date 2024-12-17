@@ -2,7 +2,8 @@
 <h1 align="center" width="500" height="600">
     <img src="assets/logo-length.png" alt="Minha Figura"><img>
 </h1>
----
+
+
 
 ### W° is a domain-specific language designed to handle the complexities of orbital mechanics and space computations. Whether you're working on interplanetary missions, orbital simulations, or just learning about space, W° offers a straightforward, intuitive syntax for space enthusiasts and professionals alike.
 

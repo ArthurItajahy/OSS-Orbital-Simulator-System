@@ -1,9 +1,4 @@
-
-<p align="flex">
-    <img src="assets/small-logo.png" alt="Minha Figura"><img>
-    <img src="assets/logo-letters.png" alt="Minha Figura"><img>
-</p>
-
+<img width="350" height="200" src="assets/small-logo.gif"/><img width="350" height="200" src="assets/logo-letters.png"/>
 
 
 W° is a domain-specific language designed to handle the complexities of orbital mechanics and space computations. Whether you're working on interplanetary missions, orbital simulations, or just learning about space, W° offers a straightforward, intuitive syntax for space enthusiasts and professionals alike.
@@ -93,8 +88,8 @@ echo("Transfer time:", transfer.time);
 
 // Simulate orbital insertion around Earth
 insert_orbit(planet_1, periapsis=300, apoapsis=400);
+```
 
-
-<p align="center" width="500" height="600">
-    <img src="assets/small-logo.gif" alt="Minha Figura"><img>
+<p align="center"  >
+    <img width="350" height="200" src="assets/small-logo.gif" alt="Minha Figura"><img>
 </p>

@@ -1,5 +1,5 @@
 <p align="center" >
-    <img width="350" height="200" src="assets/small-logo.gif" alt="Minha Figura"><img>
+    <img width="350" height="200" src="assets/main-logo.gif" alt="Minha Figura"><img>
 
 </p>
 

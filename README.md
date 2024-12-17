@@ -44,4 +44,8 @@ insert_orbit(planet_1, periapsis=300, apoapsis=400);
 
 ```
 
+<p align="center" >
+    <img width="170" height="100" src="assets/small-logo.gif" alt="Minha Figura"><img>
+
+</p>
 

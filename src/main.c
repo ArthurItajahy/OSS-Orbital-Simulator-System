@@ -41,15 +41,12 @@ char *file_contents(char *path){
 
         bytes_read += bytes_read_this_iteration;
         write_it += bytes_read_this_iteration;
-        if(feof(file)){break;}
+        if(feof(file)){
+            break;
+            }
     }
 
-    if(bytes_read < size){
-        printf("read: %zu, size: %ld\n", bytes_read, size);
-        free(contents);
-        return NULL;
-    }
-    contents[size] = '\0';
+    contents[bytes_read] = '\0';
     return contents;
 }
 

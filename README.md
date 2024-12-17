@@ -24,7 +24,7 @@ W° is a domain-specific language designed to handle the complexities of orbital
 
 ### First Script Example
 
-Here’s an example of how you can use Orbiscript to calculate a simple Hohmann transfer between Earth and Mars:
+Here’s an example of how you can use W° to calculate a simple Hohmann transfer between Earth and Mars:
 
 ```W-Grad
 // Calculate Hohmann transfer from Earth to Mars

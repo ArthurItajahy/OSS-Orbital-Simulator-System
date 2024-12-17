@@ -1,6 +1,6 @@
-# Orbiscript
+# W°
 
-Orbiscript is a domain-specific language designed to handle the complexities of orbital mechanics and space computations. Whether you're working on interplanetary missions, orbital simulations, or just learning about space, Orbiscript offers a straightforward, intuitive syntax for space enthusiasts and professionals alike.
+W° is a domain-specific language designed to handle the complexities of orbital mechanics and space computations. Whether you're working on interplanetary missions, orbital simulations, or just learning about space, W° offers a straightforward, intuitive syntax for space enthusiasts and professionals alike.
 
 ---
 
@@ -22,18 +22,11 @@ Orbiscript is a domain-specific language designed to handle the complexities of 
 
 ---
 
-## Getting Started
-
-### Installation
-
-1. **Download Orbiscript**: Head to the [Orbiscript GitHub Repository](https://github.com/orbiscript) to download the latest version.
-2. **Follow Installation Instructions**: For detailed installation steps, check out the `INSTALL.md` file in the repository.
-
 ### First Script Example
 
 Here’s an example of how you can use Orbiscript to calculate a simple Hohmann transfer between Earth and Mars:
 
-```orbiscript
+```W-Grad
 // Calculate Hohmann transfer from Earth to Mars
 planet_1 = Earth;
 planet_2 = Mars;

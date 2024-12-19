@@ -2,6 +2,7 @@
 #include <errno.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 fpos_t file_size(FILE *file){
     if(!file){return 0;}
@@ -108,14 +109,35 @@ void print_error(Error err){
         (n).type = (t);           \
         (n).msg = (message);
 
+const char *whitespace = " \r\n";
+const char *delimiters = "\r\n";
+
+// Lex the next Token from source, and point to it with BEG and END.
 Error lex(char *source, char **beg, char **end){
     Error err = ok;
-    if(!source) {
+    if(!source || !beg || !end) {
         ERROR_PREP(err, ERROR_ARGUMENTS, "Can Not lex empty source.");
         return err; 
-        }
+    }
+    *beg = source;
+    *beg += strspn(*beg, whitespace);
+    *end = *beg;
+    *end += strcspn(*beg, delimiters);
     return err;
 }
+
+Error parse_expr(char *source){
+    char *beg = source;
+    char *end = source;
+    Error err = ok;
+    while((err = lex(end, &beg, &end)).type == ERROR_NONE){
+        if(end - beg == 0){ break;}
+        printf("lexed: %.*s\n", end - beg, beg);   
+    }
+    
+    return err;
+
+};
 
 int main(int argc, char **argv){
     if(argc < 2){
@@ -128,8 +150,13 @@ int main(int argc, char **argv){
     if(contents){
         printf("Contents of %s: \n---\n\"%s\"\n---\n", path, contents);
 
+        Error err = parse_expr(contents);
+        print_error(err);
+
+        free(contents);
+
     }
-    Error err = lex(NULL, NULL, NULL);
-    print_error(err);
+
+
     return 0;
 }
